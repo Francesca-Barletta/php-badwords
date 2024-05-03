@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>PHP_INTRO</h1>
     <form action="./server.php" method="GET">
         <p>
              <label for="text">Testo:</label>
