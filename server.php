@@ -1,8 +1,9 @@
 <?php
 var_dump($_GET);
-$message = $_GET['message'];
+$message =  strtolower($_GET['message']);
 $message_length = strlen($message);
-$new_message = str_replace('Lorem','***',$message);
+$hidden_word = strtolower($_GET['hdword']);
+$new_message = str_replace($hidden_word,'***',$message);
 $new_message_length = strlen($new_message);
 ?>
 
